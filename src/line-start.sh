@@ -10,7 +10,11 @@
 
 #echo -e "a=b\nc=d" | awk -F= '{print $1}'
 
-input="/Users/kondurj/jk/git-hub-jk-boot-up/awk/resources/properties-input.in"
+parent_dir=`echo $(cd ../ && pwd)`
+
+input=$parent_dir/resources/properties-input.in
+
+echo $input
 
 #cat /dev/null > filtered_fields
 
